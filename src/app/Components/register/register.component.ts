@@ -26,6 +26,8 @@ export class RegisterComponent {
     motherName :new FormControl('',Validators.required),
     fatherMobileNo :new FormControl('',Validators.required),
     fatherAge :new FormControl('',Validators.required),
+    userName:new FormControl('',Validators.required),
+    password:new FormControl('',Validators.required),
 });
 
 submit() {

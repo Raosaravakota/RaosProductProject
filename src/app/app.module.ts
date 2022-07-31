@@ -28,6 +28,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { CondidatesinfoComponent } from './Components/condidatesinfo/condidatesinfo.component';
 
 const importcontrols=[
   BrowserModule,
@@ -62,6 +63,7 @@ const importcontrols=[
     LoginComponent,
     RegistrationFromComponent,
     RegisterComponent,
+    CondidatesinfoComponent,
   ],
   imports: [
     importcontrols
