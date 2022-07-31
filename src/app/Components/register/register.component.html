@@ -1,0 +1,115 @@
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Dashboard</div>
+    <div class="page__content shadow p-3 position-relative">
+      <div class="page__content-data position-absolute text-center">
+  
+  <div>
+  
+  
+  <mat-card>
+            <mat-card-title>Register</mat-card-title>
+      <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="submit()">
+          <table class="example-full-width" cellspacing="0">
+            <h5 style="text-align: left;"> Candidate Info</h5>
+            <tr>
+              <td>
+                <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name">
+                </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Sure Name</mat-label>
+                <input matInput formControlName="surName">
+              </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-form-field appearance="fill">
+                  <mat-label>Select Gender</mat-label>
+                  <mat-select formControlName="gender">
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                    <mat-option value="Un Known">Un Known</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </td>
+              <mat-form-field appearance="fill">
+                <mat-label>Select Education</mat-label>
+                  <mat-select formControlName="education">
+                    <mat-option value="5th Class">5th Class</mat-option>
+                    <mat-option value="10th Class">10th Class</mat-option>
+                    <mat-option value="Intermedicate">Intermedicate</mat-option>
+                    <mat-option value="Degree">Degree</mat-option>
+                    <mat-option value="PG">PG</mat-option>
+                    <mat-option value="Phd">Phd</mat-option>
+                  </mat-select>
+              </mat-form-field>
+            </tr>
+
+            <tr>
+              <td>
+              <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Mobile No</mat-label>
+              <input matInput formControlName="mobile">
+              </mat-form-field>
+              </td>
+              <td>
+              <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Gmail</mat-label>
+              <input matInput formControlName="gmail">
+             </mat-form-field>
+              </td>
+            </tr>
+
+            <h5 style="text-align: left;"> Parents Info</h5>
+            <tr>
+              <td>
+              <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Father Name</mat-label>
+              <input matInput formControlName="fatherName">
+              </mat-form-field>
+              </td>
+              <td>
+              <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Mother</mat-label>
+              <input matInput formControlName="motherName">
+             </mat-form-field>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+              <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Father Mobile</mat-label>
+              <input matInput formControlName="fatherMobileNo">
+              </mat-form-field>
+              </td>
+              <td>
+              <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Father Age</mat-label>
+              <input matInput formControlName="fatherAge">
+             </mat-form-field>
+              </td>
+            </tr>
+        
+        </table>
+  
+          <p *ngIf="error" class="error">
+            {{ error }}
+          </p>
+  
+          <div class="button">
+            <button type="submit" mat-button>Save</button>
+          </div>
+  
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  </div>
+  </div>
+  </div>
