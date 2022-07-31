@@ -1,5 +1,6 @@
 import { Input, Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { LoggedUserInfo } from 'src/app/Data/logged-user-info';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,10 @@ export class LoginComponent {
 
 submit() {
   if (this.form.valid) {
-    this.submitEM.emit(this.form.value);
+    const user: LoggedUserInfo = {
+      userName: this.form.controls['username'].value,
+      passWord: this.form.controls['password'].value
+    };
   }
 }
 @Input() error: string | null | undefined;

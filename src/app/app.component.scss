@@ -1,15 +1,15 @@
 :host {
     display: flex;
     flex-direction: column;
-    height: 750px;
+    height: 100%;
   }
   
   mat-drawer {
-    width: 260px;
+    width: 250px;
   }
-  // mat-drawer-container {
-  //   height: 100%;
-  // }
+  mat-drawer-container {
+    height: 100%;
+  }
   
   mat-drawer {
     background: #0f172a;
