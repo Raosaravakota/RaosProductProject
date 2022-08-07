@@ -17,7 +17,6 @@ import { SidenavComponent } from './Components/sidenav/sidenav.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { MyProductsComponent } from './Components/my-products/my-products.component';
 import { LoginComponent } from './Components/login/login.component';
-import { RegistrationFromComponent } from './Components/registration-from/registration-from.component';
 import { MatCardModule} from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from  '@angular/material/button';
@@ -61,7 +60,6 @@ const importcontrols=[
     ContactUsComponent,
     MyProductsComponent,
     LoginComponent,
-    RegistrationFromComponent,
     RegisterComponent,
     CondidatesinfoComponent,
   ],
