@@ -10,11 +10,8 @@ export class RegisterComponent {
   registerForm: any;
   fieldRequired: string = "This field is required"
 
-
- 
-
   form: FormGroup = new FormGroup({
-    name: new FormControl(''),
+    candidatename: new FormControl(''),
     surName: new FormControl(''),
     gender:new FormControl('',Validators.required),
     education:new FormControl('',Validators.required),
