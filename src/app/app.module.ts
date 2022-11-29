@@ -28,6 +28,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { CondidatesinfoComponent } from './Components/condidatesinfo/condidatesinfo.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ViewPhotosComponent } from './Components/view-photos/view-photos.component';
 
 const importcontrols=[
   BrowserModule,
@@ -48,7 +50,8 @@ const importcontrols=[
   MatDatepickerModule,
   MatRadioModule,
   MatSelectModule,
-  MatExpansionModule
+  MatExpansionModule,
+  HttpClientModule
 ]
 @NgModule({
   declarations: [
@@ -62,6 +65,7 @@ const importcontrols=[
     LoginComponent,
     RegisterComponent,
     CondidatesinfoComponent,
+    ViewPhotosComponent,
   ],
   imports: [
     importcontrols
@@ -69,7 +73,7 @@ const importcontrols=[
   exports:[
     importcontrols
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

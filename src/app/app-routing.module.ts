@@ -7,16 +7,18 @@ import { HomeComponent } from './Components/home/home.component';
 import { LoginComponent } from './Components/login/login.component';
 import { MyProductsComponent } from './Components/my-products/my-products.component';
 import { RegisterComponent } from './Components/register/register.component';
+import { ViewPhotosComponent } from './Components/view-photos/view-photos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path:'contactus',component:ContactUsComponent},
-  {path:'myProducts',component:MyProductsComponent},
-  { path:'login',component:LoginComponent},
-  {path:'register',component:RegisterComponent},
-  {path:'candidatesInfo', component:CondidatesinfoComponent}
+  { path: 'contactus',component:ContactUsComponent},
+  { path: 'myProducts',component:MyProductsComponent},
+  { path: 'login',component:LoginComponent},
+  { path: 'register',component:RegisterComponent},
+  { path: 'candidatesInfo', component:CondidatesinfoComponent},
+  { path:'dashboard/viewPhotos', component:ViewPhotosComponent}
 
 ];
 @NgModule({
