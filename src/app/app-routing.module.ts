@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CondidatesinfoComponent } from './Components/condidatesinfo/condidatesinfo.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { HomeComponent } from './Components/home/home.component';
 import { LoginComponent } from './Components/login/login.component';
 import { MyProductsComponent } from './Components/my-products/my-products.component';
+import { PersonsinfoComponent } from './Components/personsinfo/personsinfo.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { ViewPhotosComponent } from './Components/view-photos/view-photos.component';
 
@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'myProducts',component:MyProductsComponent},
   { path: 'login',component:LoginComponent},
   { path: 'register',component:RegisterComponent},
-  { path: 'candidatesInfo', component:CondidatesinfoComponent},
+  {path:'personsInfo',component:PersonsinfoComponent},
   { path:'dashboard/viewPhotos', component:ViewPhotosComponent}
 
 ];

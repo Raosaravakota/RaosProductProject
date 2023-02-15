@@ -14,4 +14,14 @@
   mat-drawer {
     background: #0f172a;
   }
-  
+  .footer{
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: #eee;
+    padding: 3px 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgreen;
+    font-family: fantasy;
+    color: mediumblue;
+  }

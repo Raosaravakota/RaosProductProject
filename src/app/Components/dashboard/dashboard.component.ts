@@ -8,13 +8,15 @@ import { Route, Router, RouterEvent } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
+  photoCounts:number=25;
   constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
   showPhotos(){
-    this.router.navigateByUrl("dashboard/viewPhotos");
+    //this.router.navigateByUrl("dashboard/viewPhotos");
+
   }
 
 }

@@ -1,0 +1,42 @@
+[
+    {
+        "PersonID":1,
+        "PersonName":"Rao",
+        "PersonDOB":"01/01/2012",
+        "PersonGender":"Male",
+        "PersonAddress":"Gunadala, Vijayawada",
+        "PersonSalary":"456.252"
+    },
+    {
+        "PersonID":2,
+        "PersonName":"Akbar",
+        "PersonDOB":"01/01/2020",
+        "PersonGender":"Male",
+        "PersonAddress":"Gadepalli, Gunture",
+        "PersonSalary":"632.252"
+    },
+    {
+        "PersonID":3,
+        "PersonName":"Hemanth",
+        "PersonDOB":"01/01/1990",
+        "PersonGender":"Male",
+        "PersonAddress":"nadyala, Ongole",
+        "PersonSalary":"321.00"
+    },
+    {
+        "PersonID":4,
+        "PersonName":"Hema",
+        "PersonDOB":"01/01/2000",
+        "PersonGender":"Female",
+        "PersonAddress":"dantha, Srikakulam",
+        "PersonSalary":"100.252"
+    },
+    {
+        "PersonID":5,
+        "PersonName":"Nalini",
+        "PersonDOB":"01/01/2019",
+        "PersonGender":"Female",
+        "PersonAddress":"Medpie, Hyderabdad",
+        "PersonSalary":"250.252"
+    }
+]

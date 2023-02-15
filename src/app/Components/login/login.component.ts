@@ -1,8 +1,9 @@
 import { Input, Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { LoggedUserInfo } from 'src/app/Data/logged-user-info';
+import { LoggedUserInfo } from 'src/assets/data/logged-user-info';
 import { UserInfoSerService } from 'src/app/Services/user-info-ser.service';
+
 
 @Component({
   selector: 'app-login',
@@ -21,6 +22,7 @@ export class LoginComponent {
   });
 
   submit() {
+
     if (this.form.valid) {
       const user: LoggedUserInfo = {
         userName: this.form.controls['username'].value,
@@ -28,10 +30,7 @@ export class LoginComponent {
       };
       this.userInfo.setLoggedUser(user);
 
-      if(user.userName=='rao' && user.passWord=='rao')
-      {
-        this.routerInfo.navigateByUrl("/home");
-      }
+      this.userInfo.LoginUser(user);
 
     }
   }

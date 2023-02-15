@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-view-photos',
@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-photos.component.scss']
 })
 export class ViewPhotosComponent implements OnInit {
+  @Input() photoCounts?:number;
 
-  constructor() { }
-
+  constructor(  ) { }
   ngOnInit(): void {
   }
 
